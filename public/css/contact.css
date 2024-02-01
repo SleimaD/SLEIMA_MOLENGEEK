@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    /* background: aqua; */
+}
+
+
+header {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 4rem; */
+}
+
+
+header::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../src/bannerHome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: calc(35%,50%,80%);
+    z-index: -1;
+    filter: brightness(50%) blur(2.5px)  grayscale(80%) ;
+    background-attachment: fixed; 
+}
+
+
+
+#logoMolengeek {
+    width: 100%;
+    filter: brightness(1.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 1.5rem;
+    
+}
+
+.divLogo {
+    width: 140px;
+}
+
+.liens  {
+    display: flex;
+    align-items: center;
+}
+
+.liens ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.liens ul li {
+    margin: 0 20px;
+}
+
+.liens ul li a {
+    color: rgb(254, 254, 254);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.liens ul li a:hover {
+  color: rgb(255, 198, 198);
+  text-shadow: -2px 2px 10px #cc3a3a;
+
+}
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #090909
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+nav .menuBurger {
+    width: 50px;
+    display: none !important;
+    /* position: absolute; */
+    /* top: 50px;
+    right: 130px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slogan {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 130px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.slogan span {
+    font-size: 2.2rem;
+}
+
+
+
+.contactSec {
+    width: 100%;
+    background-color: #ffffff;
+    /* background-image: linear-gradient(to right, #282727 0%, black 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+
+.container {
+	background-color: rgb(101, 110, 110);
+	border-radius: 5px;
+  	/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22); */
+    box-shadow: 0 0 50px 0px rgb(134, 133, 133);
+	position: relative;
+	overflow: hidden;
+	width: 968px;
+	max-width: 100%;
+	min-height: 580px;
+    min-width:370px;
+    display: flex;
+    justify-content: center;
+    /* padding: 5rem; */
+    margin-bottom: 7rem;
+    margin-top: 7rem;
+
+}
+
+h2 {
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.form-container {
+  display:flex;
+}
+
+.left-container {
+  flex:1;
+  /* height:580px; */
+  /* background-color: black; */
+  background-image: linear-gradient(to right, #2e2e2e 0%, black 100%);
+}
+.right-container {
+  display:flex;
+  flex:3;
+  /* height:100%; */
+  background-color: white;
+  justify-content:center;
+  align-items:center;
+}
+
+.left-container {
+    display:flex;
+    flex:1;
+    /* height:480px; */
+    justify-content:center;
+    align-items:center;
+    color: black;
+}
+
+.left-container p {
+  font-size:0.9rem;
+}
+
+.right-inner-container {
+  width:70%;
+  height:80%;
+  text-align:center;
+}
+
+.left-inner-container {
+  height:50%;
+  width:80%;
+  text-align:center;
+  line-height:22px;
+}
+
+input, textarea {
+	background-color: #eee; 
+	border: 0.5px white;
+    border-radius: 10px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    font-size:0.8rem;
+}
+
+input:focus, textarea:focus{
+    box-shadow: inset 0 0 10px 0px #b4b7f1;
+}
+
+button {
+	border-radius: 20px;
+    border: none;
+	/* border: 1px solid #001fcf; */
+	/* background-color: #0f1364; */
+    background-image: linear-gradient(to right, #102d43 0%, #517fa4 100%);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  cursor:pointer;
+}
+
+button:hover {
+  opacity:0.8;
+}
+@media only screen and (max-width: 600px) {
+  .left-container{
+    display: none;
+  }
+  .lg-view {
+    display:none;  
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display:none;  
+  }
+}
+
+form p {
+  text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    height: 500px;
+}
+
+.footerTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footerTopLeft {
+    /* width: 70%; */
+    padding: 2rem;
+}
+
+.logoMolengeek {
+    width: 40%;
+    padding: 2rem;
+}
+
+.footerTopRight {
+    /* width: 50%; */
+}
+
+
+.cardRS {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 2s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #3A5599;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  
+  .cardRS a img {
+    fill: rgb(255, 255, 255);
+    width: 17px;
+  }
+  
+  .socialContainer:hover img {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+  
+
+.footerBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
