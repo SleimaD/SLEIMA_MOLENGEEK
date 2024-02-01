@@ -192,10 +192,6 @@ ul li.card{
     cursor: pointer;
 }
 
-ul li.card:hover {
-  opacity: 0.7;
-  background-color: #0000008b !important;
-}
 
 ul li.card::before, ul li.card::after {
     --side-rotate: 60deg;

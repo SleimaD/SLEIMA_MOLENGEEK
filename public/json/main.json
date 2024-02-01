@@ -228,7 +228,7 @@
         "questionV": "Combien coûtent les formations à MolenGeek ?",
         "reponseV": "Les formations sont gratuites pour les demandeurs d’emploi sur présentation de chèques Tic disponibles chez Actiris . Pour les particuliers et entreprises, il faut nous contacter pour recevoir un devis."
     },
-    "articles": [
+    "articles": [ 
         {
             "date": "12/09/2023",
             "source": "DH",

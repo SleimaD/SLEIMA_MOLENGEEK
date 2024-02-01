@@ -257,7 +257,7 @@ nav .menuBurger {
     border-radius: 10px;
 }
 .ulCont::-webkit-scrollbar-track {
-    background-color: #766060;
+    background-color: #bbd5e5;
 }
 .ulCont::-webkit-scrollbar-thumb {
     background-color: #950a0a;
@@ -314,7 +314,22 @@ nav .menuBurger {
 
 .faq {
     width: 100%;
+}
 
+.accordion-button {
+    background-color: rgb(252, 227, 250);
+    box-shadow: 2px 2px 2px rgb(131, 130, 130);
+    border-radius: 10px !important;
+}
+
+.accordion-button:focus {
+    background-color: beige;
+    box-shadow: 2px 2px 2px black;
+}
+
+.accordion-body {
+    background-color: beige;
+    border-radius: 8px !important;
 }
 
 .faq h1 {
